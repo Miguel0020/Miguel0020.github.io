@@ -1,0 +1,137 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1a1a1d;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(93, 38, 193, 0.8), rgba(161, 127, 224, 0.8)), url('ultra-ego-vegeta.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+
+header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    transform: skewY(-10deg);
+}
+
+header .perfil {
+    position: relative;
+    z-index: 1;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    border: 5px solid #8105b3;
+    width: 180px;
+    height: 180px;
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(255, 0, 255, 0.5);
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    color: #c5b8c5;
+    text-shadow: 2px 2px 20px rgba(255, 0, 255, 0.5);
+}
+
+section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 24px rgba(255, 0, 255, 0.5);
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00ffff;
+    border-bottom: 3px solid #00ffff;
+    display: inline-block;
+}
+
+#habilidades .skills {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.skill {
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10%;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 255, 255, 0.6);
+    border-radius: 10%;
+}
+
+.skill img {
+    width: 80px;
+    height: 80px;
+}
+
+#proyectos .proyecto {
+    margin-bottom: 20px;
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#proyectos .proyecto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+}
+
+#proyectos .proyecto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff00ff;
+}
+
+#experiencia, #algo-mas {
+    background-color: #292929;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #ff00ff;
+}
